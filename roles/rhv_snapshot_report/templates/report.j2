@@ -1,0 +1,4 @@
+VM Name, Snapshot Count
+{% for vm in vms['ovirt_vms'] %}
+"{{ vm['name'] }}", "{{ vm['snapshots'] | length }}"
+{% endfor %}

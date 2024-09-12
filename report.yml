@@ -1,0 +1,6 @@
+- name: Generate Snapshots reports from RHV
+  hosts: localhost
+  become: false
+  gather_facts: false
+  roles:
+    - rhv_snapshot_report
